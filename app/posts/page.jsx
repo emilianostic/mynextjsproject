@@ -2,10 +2,12 @@ import PostCard from '../../components/PostCard'
 async function loadPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts");
   const data = await res.json();
+
+  //await new Promise((resolve)=> setTimeout(resolve, 3000))
   return data;
 }
 //RSC
-async function PostPages() {//el asyn da l apauta que es un componente del lado del servidor
+async function PostPages() {//el async da la apauta que es un componente del lado del servidor
   const posts = await loadPosts();
   console.log(posts)
   return (
