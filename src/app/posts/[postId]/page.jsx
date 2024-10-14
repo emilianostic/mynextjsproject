@@ -1,5 +1,5 @@
 
-import Post from '@/app/posts/page'
+import Post from '@/src/app/posts/page'
 import { Suspense } from 'react';
 
 async function loadPost(id) {
